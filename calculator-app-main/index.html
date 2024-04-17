@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="index.css">
+  <title>Frontend Mentor | Calculator app</title>
+</head>
+<body>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-3"></div>
+   
+  <div class="col-md-3">
+    <div class="calculator">
+      <form>
+        <div class="container2">
+        <div class="display">
+          <input type="text" name="display" placeholder=" " id="output">
+        </div>
+      </div>
+        <div class="container1">
+        <div>
+          <input type="button" value="7" onclick="display.value+='7'">
+          <input type="button" value="8" onclick="display.value+='8'">
+          <input type="button" value="9" onclick="display.value+='9'">
+          <button onclick="deleteCharacter(event)" class="button3">DEL</button>
+
+          </div>
+        <div>
+          <input type="button" value="4" onclick="display.value+='4'">
+          <input type="button" value="5" onclick="display.value+='5'">
+          <input type="button" value="6" onclick="display.value+='6'">
+          <input type="button" value="+" onclick="display.value+='+'">
+        </div>
+        <div>
+          <input type="button" value="1" onclick="display.value+='1'">
+          <input type="button" value="2" onclick="display.value+='2'">
+          <input type="button" value="3" onclick="display.value+='3'">
+          <input type="button" value="-" onclick="display.value+='-'">
+        </div>
+        <div>
+          <input type="button" value="." onclick="display.value+='.'">
+          <input type="button" value="0" onclick="display.value+='0'">
+          <input type="button" value="/" onclick="display.value+='/'">
+          <input type="button" value="*" onclick="display.value+='*'">
+        </div>
+        <div class="buttons">
+          <button onclick="clearDisplay()" class="button1">RESET</button>
+          <button onclick="calculate(event)" class="equal">=</button>
+        </div>
+        </div>
+      </form>
+    </div>
+  </div>
+  <div class="col-md-3"></div>
+  <div class="col-md-3"></div>
+    </div>
+
+  <script src="bootstrap-5.0.2-dist\bootstrap-5.0.2-dist\js\bootstrap.min.js"></script>
+  <script src="index.js"></script>
+</body>
+</html>
