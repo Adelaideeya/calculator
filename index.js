@@ -5,7 +5,7 @@ function calculate(event) {
     
     try {
         // Evaluate the expression
-        let result = eval(output.value); 
+        let result = eval(output.value);
         
         // Update the display with the result
         output.value = result;
